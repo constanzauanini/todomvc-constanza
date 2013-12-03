@@ -2,24 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <section id="pendientesapp">
     <header id="header">
       <h1>Pendientes</h1>
       <input id="new-todo" placeholder="Nombre del pendiente" autofocus />
+      <button class="add">Agregar</button>
     </header>
     <section id="main">
       <ul id="todo-list"></ul>
     </section>
   </section>
   <script type="text/template" id="item-template">
-    <div class="view">
-      <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %>>
-      <label><%- title %></label>
-      <button class="destroy"></button>
-    </div>
     <input class="edit" value="<%- title %>">
+    <div class="view">
+      Completo <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %> />
+      <button class="destroy">Eliminar</button>
+    </div>
+   
   </script>
   <script src="js/lib/jquery-1.10.2.js"></script>
   <script src="js/lib/underscore.js"></script>
@@ -28,8 +30,8 @@
   <script src="js/models/pendiente.model.js"></script>
   <script src="js/collections/pendientes.collection.js"></script>
   <script src="js/views/pendientes.view.js"></script>
-  <script src="js/routers/router.js"></script>
-  <script src="js/lib/handlebars-v1.1.2.js"></script>
+  <script src="js/views/app.view.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
+
