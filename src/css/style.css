@@ -1,4 +1,71 @@
-.completed
-{
-	color:red;
+body {
+	background-color: #E8E0DC;
+}
+
+.completed {
+	color: #16C940;
+}
+
+button {
+	background: #D6A898;
+	color: white
+}
+
+.edit {
+	color: #820018;
+	font-weight: bold;
+	font-size: 16px;
+	border-width: 0 2px 0 2px;
+	padding: 5px;
+	background-color: #E8E0DC;
+}
+
+#todo-list {
+	list-style-type: decimal;
+}
+
+span {
+	font-size: 10px;
+}
+
+ul {
+	width: 50%;
+}
+
+li {
+	border-color: gray;
+	border-style: dotted;
+	border-width: 1px;
+}
+
+.toggle {
+	border-right: red;
+	border-style: solid;
+	border-width: 2px;
+}
+
+h1 {
+	width: 50%;
+	margin-left: 40px;
+	color: #782D10;
+	font-size: 15px;
+}
+
+section h1 {
+	font-size: 20px;
+}
+
+.new {
+	margin-left: 40px;
+	border-color: gray;
+	border-style: dotted;
+	border-width: 1px;
+	padding: 10px;
+	width: 48%;
+}
+
+h3 {
+	padding: 0;
+	margin: 0 0 10px 5px;
+	color: #782D10;
 }

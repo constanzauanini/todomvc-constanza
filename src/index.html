@@ -6,23 +6,24 @@
 </head>
 <body>
   <section id="pendientesapp">
-    <header id="header">
-      <h1>Pendientes</h1>
-      <input id="new-todo" placeholder="Nombre del pendiente" autofocus />
-      <button class="add">Agregar</button>
+    <header>
+      <h1>Pendientes</h1>      
     </header>
     <section id="main">
       <ul id="todo-list"></ul>
     </section>
-  </section>
+  
   <script type="text/template" id="item-template">
-    <input class="edit" value="<%- title %>">
-    <div class="view">
-      Completo <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %> />
-      <button class="destroy">Eliminar</button>
-    </div>
-   
+    <span> Completo </span> <input class="toggle" type="checkbox" <%= completed ? 'checked' : '' %> />
+    <input class="edit" value="<%- title %>">     
+    <button class="destroy">Eliminar</button>   
   </script>
+  <section class="new">
+    <h3>Nuevo pendiente</h3>  
+    <input id="new-todo" placeholder="Nombre del pendiente" autofocus />
+    <button class="add">Agregar</button>
+  </section>
+  </section>
   <script src="js/lib/jquery-1.10.2.js"></script>
   <script src="js/lib/underscore.js"></script>
   <script src="js/lib/backbone.js"></script>
